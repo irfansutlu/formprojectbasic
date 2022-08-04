@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satış Sözleşmesi</title>
+</head>
+<style>
+    body{
+        background-image: url('https://www.setxrm.com/wp-content/uploads/2019/08/sozlesme-yonetimi-413x351.png'); 
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .container{
+        width: 70%;
+        margin: 5% 15%;
+    }
+    h1{
+        text-align: center;
+    }
+    fieldset{
+        width: 100%;
+        border: 2px solid black;
+        font-weight: bold;
+    }
+    fieldset legend{
+        font-size: 1.6em;
+    }
+    .wlabel label{
+        display: inline-block;
+        width: 200px;
+    }
+</style>
+<body>
+    <div class="container">
+    <h1>ABC TASARIM PROGRAMI KURULUM VE SATIŞ SÖZLEŞMESİ</h1>
+    <form action="">
+        <fieldset>
+            <legend>Sözleşme Onay</legend>
+            <input type='checkbox' name="first_accept" id="first_accept">
+            <label for="first_accept">Aşağıdaki bilgilerin doğruluğunu kabul ediyorum ve sözleşmeyi onaylıyorum.</label>
+            <br>
+            <input type="submit" value="Formu Kaydet">
+            <input type="reset" value="Formu Temizle">
+        </fieldset>
+        <fieldset class="wlabel">
+            <legend>Kişisel Bilgiler</legend>
+            <label for="safety_id">Form Güvenlik ID</label>
+            <input type="text" name="safety_id" id="safety_id"><br>
+
+            <label for="ad" >Ad</label>
+            <input type="text" name="ad" id="ad"><br>
+
+            <label for="soyad" >Soyad</label>
+            <input type="text" name="soyad" id="soyad"><br>
+
+            <label for="yas" >Yaş</label>
+            <input type="number" name="yas" id="yas" min="18"><br>
+
+            <label for="mail_add" >Mail Adresi</label>
+            <input type="email" name="mail_add" id="mail_add"><br>
+
+            <label for="photo" >Fotoğraf Ekle</label>
+            <input type="file" name="photo" id="photo"><br>
+        </fieldset>
+        <fieldset class="wlabel">
+            <legend>Diğer Bilgiler</legend>
+            <b>Buradaki alanlar mesleki deneyimleri kapsar.</b><br><br>
+
+            <label for="tarih">Sektöre Giriş Tarihi</label>
+            <input type="date" name="tarih" id="tarih"><br>
+
+            
+            <label for="tecrübe">Sektör Deneyimi</label>
+            <div style="margin-left: 200px;">
+            <input type="radio" name="tecrübe" id="tecrübe">1-5 Yıl <br>
+            <input type="radio" name="tecrübe" id="tecrübe">6-10 Yıl <br>
+            <input type="radio" name="tecrübe" id="tecrübe">11-15 Yıl <br>
+            <input type="radio" name="tecrübe" id="tecrübe">15 üzeri <br>
+            </div>
+
+            <label for="diller">Programa Dilleri</label>
+            <select name="diller" id="diller" height="5" multiple>
+                <option value="dil">Java</option>
+                <option value="di2">Javascript</option>
+                <option value="di3">C</option>
+                <option value="di4">Python</option>
+                <option value="di5">PHP</option>
+                <option value="di6">Ruby</option>
+                <option value="di7">Swift</option>
+            </select>
+            
+        </fieldset>
+        <fieldset>
+            <legend>Sözleşme Kopyası</legend>
+            <textarea name="sözlesme_kopyası" cols="50" rows="5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam et perferendis quisquam maiores atque pariatur distinctio, deleniti illo eaque ut ipsa velit voluptatum, in provident itaque placeat dolorem doloribus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati totam voluptas neque modi et dolore deserunt cum maxime, ullam beatae voluptatem earum, minus molestiae, sequi amet soluta? Aliquid, eligendi iure...</textarea>
+            <br>
+            <a href="./sözleşme.zip" download="sözleşme">Sözleşmeyi indir.</a>
+        </fieldset>
+        <fieldset>
+            <legend>Mail Listesi</legend>
+            <label for="okey">Mail Listesine Katılmak İstiyorum</label>
+            <input type="radio" name="okeyornot" id="okey">
+            <br>
+
+            <label for="not">Mail Listesine Katılmak İstemiyorum</label>
+            <input type="radio" name="okeyornot" id="not">
+        </fieldset>
+    </form>
+    </div>
+</body>
+</html>
